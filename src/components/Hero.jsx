@@ -19,7 +19,12 @@ export default function Hero() {
 				<span className="text-blue-400 font-medium"> journey</span>, celebrates
 				your wins, and helps you build the habits that stick.
 			</p>
-			<Button text={'Accept & Begin'} />
+			<Button
+				func={() => {
+					window.location.href = '#generate'
+				}}
+				text={'Accept & Begin'}
+			></Button>
 		</div>
 	)
 }
